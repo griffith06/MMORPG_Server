@@ -165,8 +165,7 @@
 MCP 기반 자연어 서버 모니터링, AI 분석을 활용한 네트워크 라우팅 최적화 등 AI를 실전 운영과 개발 파이프라인에 결합하는 R&D 주도.
 
 ### Contact Information
-회사명: AscCube Tech
-이메일: [acecube2016@gmail.com]
+- **AceCube Tech**  [acecube2016@gmail.com]
 
 ---
 
