@@ -1,0 +1,42 @@
+
+
+소스 생성 규칙.
+소스파일은 utf8bom으로 생성.
+빠른 개발 속도와 최대 성능을 내는 것이 목표.
+모든 소스는 간결하고 직관적으로 보기 좋아야 함.
+*.h 에 함수나 변수에 주석작성 필요.(너무 뻔한거는 안해도 됨. X,Y,Z 이런거)
+컴파일 속도를 최대한 빠르게 해야 함.
+	템플릿 최소화.
+	미리컴파일된 헤더 사용금지.
+	inline 함수 가급적 금지.
+최적화는 필수.
+	new/delete,  std 적절한 사용으로 메모리 변화량 최소. 
+	중간중간 프로파일러 돌려서 최적화 필수.
+namespace 사용 안함.
+shared_ptr및 스마트포인터 사용안함. 
+람다 최대한 줄임.
+구조체는 첫자가 F로 시작,클래스는 C로 시작.
+구조체,클래스 멤버변수규약
+	단어별 첫자는 대문자 나머지소문자.		struct FActor{	int NumPlayers;	};
+	포인터중 nullptr이 가능한 경우 p를 붙임. 예) pMonster
+	nullptr이 체크가 필요없는 경우(초기화후 변할일이 없을때) 똑같이 대문자시작 예) Player
+	bool 변수는 b로 시작.   bIsPlayer	 인자나 로컬경우 b_is_player
+함수 인자,로컬변수는 소문자로 구성 단어별 사이는 '_' 로 구분.  예) max_players
+
+{}규약및 대소문자 예)
+
+struct FActor
+{
+	int LoopIndex;
+	void SetLoopIndex(int loop_index);
+};
+함수에서 
+void LoopIndex(int loop_index)
+{
+	int local_i;
+	for(local_i=0; local_i<loop_index; loop_index++)
+		LoopIndex++;
+}
+
+
+

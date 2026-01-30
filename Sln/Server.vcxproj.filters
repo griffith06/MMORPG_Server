@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{356c504d-705d-458c-87dd-a8454c5ca8d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Threading">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Core\Common">
+      <UniqueIdentifier>{8be98107-fff7-46f8-a357-a7f692ed99b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Network">
+      <UniqueIdentifier>{36cb3ccf-f11a-48b7-a914-9fd6c2798f66}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Source\Core\Common\Buffer.cpp">
+      <Filter>Core\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Core\Network\Listener.cpp">
+      <Filter>Core\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Core\Network\Session.cpp">
+      <Filter>Core\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Core\Network\Socket.cpp">
+      <Filter>Core\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Core\Threading\IOThreadPool.cpp">
+      <Filter>Core\Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Core\Threading\LocalThread.cpp">
+      <Filter>Core\Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Core\Threading\ThreadManager.cpp">
+      <Filter>Core\Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Game\ServerMain.cpp" />
+    <ClCompile Include="..\Source\Core\Common\AsioImpl.cpp">
+      <Filter>Core\Common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Source\Core\Common\Buffer.h">
+      <Filter>Core\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Core\Common\LockFreeQueue.h">
+      <Filter>Core\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Core\Common\Types.h">
+      <Filter>Core\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Core\Network\Listener.h">
+      <Filter>Core\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Core\Network\NetworkFwd.h">
+      <Filter>Core\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Core\Network\Session.h">
+      <Filter>Core\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Core\Network\Socket.h">
+      <Filter>Core\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Core\Threading\IOThreadPool.h">
+      <Filter>Core\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Core\Threading\LocalThread.h">
+      <Filter>Core\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Core\Threading\ThreadManager.h">
+      <Filter>Core\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Core\Network\NetworkMonitor.h">
+      <Filter>Core\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Core\Common\Protocol.h">
+      <Filter>Core\Common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\ReadMe.md" />
+  </ItemGroup>
+</Project>

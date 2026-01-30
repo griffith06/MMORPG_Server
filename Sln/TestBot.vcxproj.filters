@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="NewFilter1">
+      <UniqueIdentifier>{1b23a9ce-2b00-432e-81ae-0cf7820bf3cd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Source\Etc\TestPacketBot\DummyClient.cpp" />
+    <ClCompile Include="..\Source\Etc\TestPacketBot\LoadTestMain.cpp" />
+    <ClCompile Include="..\Source\Etc\TestPacketBot\LoadTestManager.cpp" />
+    <ClCompile Include="..\Source\Core\Common\Buffer.cpp">
+      <Filter>NewFilter1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Core\Network\Listener.cpp">
+      <Filter>NewFilter1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Core\Network\Session.cpp">
+      <Filter>NewFilter1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Core\Network\Socket.cpp">
+      <Filter>NewFilter1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Core\Threading\IOThreadPool.cpp">
+      <Filter>NewFilter1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Core\Threading\LocalThread.cpp">
+      <Filter>NewFilter1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Core\Threading\ThreadManager.cpp">
+      <Filter>NewFilter1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Core\Common\AsioImpl.cpp">
+      <Filter>NewFilter1</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Source\Etc\TestPacketBot\DummyClient.h" />
+    <ClInclude Include="..\Source\Etc\TestPacketBot\LoadTestManager.h" />
+    <ClInclude Include="..\Source\Core\Common\Buffer.h">
+      <Filter>NewFilter1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Core\Common\LockFreeQueue.h">
+      <Filter>NewFilter1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Core\Common\Types.h">
+      <Filter>NewFilter1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Core\Network\Listener.h">
+      <Filter>NewFilter1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Core\Network\NetworkFwd.h">
+      <Filter>NewFilter1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Core\Network\Session.h">
+      <Filter>NewFilter1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Core\Network\Socket.h">
+      <Filter>NewFilter1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Core\Threading\IOThreadPool.h">
+      <Filter>NewFilter1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Core\Threading\LocalThread.h">
+      <Filter>NewFilter1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Core\Threading\ThreadManager.h">
+      <Filter>NewFilter1</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
