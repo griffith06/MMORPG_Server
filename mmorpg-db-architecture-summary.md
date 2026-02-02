@@ -1,5 +1,5 @@
 # 고성능 MMORPG를 위한 DB 아키텍처
-## Async Write-Behind + Local WAL
+## Async Write-Behind + Local WAL(Write Ahead Log)
 
 ---
 
