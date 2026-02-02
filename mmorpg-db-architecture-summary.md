@@ -1,4 +1,4 @@
-# 고성능 MMORPG를 위한 DB 아키텍처
+# High-Performance MMORPG를 위한 DB 아키텍처
 ## Async Write-Behind + Local WAL(Write Ahead Log)
 
 ---
