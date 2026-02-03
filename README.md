@@ -192,3 +192,22 @@ MCP 기반 자연어 서버 모니터링, AI 분석을 활용한 네트워크 �
 ├─ CPU: 8-core (단일 VM)
 └─ Recovery Time: <수초~5분
 ```
+### Optimizing
+```
+1. 세션-소켓 분리 설계
+class CGameSession{public:    // 포인터 큐 - 8바이트 * 512 = 4KB (기존 4MB에서 대폭 감소)
+CGameSession과 CSocket의 명확한 분리로 DDoS 방어 및 리커넥트 기능이 잘 구현됨
+소켓이 끊겨도 세션 데이터(게임 상태)가 유지되는 Zombie State 패턴 적용
+2. Lock-Free Queue 구현
+SPSCQueue - Single Producer Single Consumer Lock-Free Queue// Session의 IncomingPacketQueue에 사용 (포인터 저장용 최적화)
+SPSC/MPSC 큐를 적절히 활용하여 Lock Contention 최소화
+Cache Line 정렬(alignas(64))으로 False Sharing 방지
+4. Gathering I/O (Send Batching)
+32개의 패킷을 1번의 시스템 콜로 CPU 병목을 획기적으로 줄임.    
+이게 없었다면 10만~15만 PPS에서 CPU가 못버팀.    
+std::vector<asio::const_buffer> GatherList;
+여러 패킷을 묶어서 한 번의 System Call로 전송하는 최적화
+5. 동적 확장 버퍼 풀
+Page 기반 동적 확장으로 메모리 단편화 방지
+6. Strand 기반 동기화
+```
